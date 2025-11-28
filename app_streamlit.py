@@ -7,8 +7,6 @@ import plotly.graph_objects as go
 from io import StringIO
 from datetime import datetime
 
-# Mock detector_core functions (replace with your actual imports)
-# from detector_core import load_model, clean_dataset, predict_flows
 
 MODEL_PATH = "trained_model.pickle"
 
