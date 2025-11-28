@@ -7,13 +7,15 @@ from io import StringIO
 from typing import Optional
 from detector_core import load_model, clean_dataset, predict_flows
 
+
 app = FastAPI(
     title="P2P Botnet Detector API",
     description="FastAPI backend for CSV-based botnet flow detection.",
     version="1.0.0",
 )
 
-# CORS (optional – for Streamlit or web frontends)
+
+# CORS 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # lock down in prod
